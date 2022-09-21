@@ -25,3 +25,4 @@ Terakhir adalah melakukan deployment aplikasi pada heroku dengan memasukkan API 
 #### Screenshot URL dengan postman
 ![2022-09-22](https://user-images.githubusercontent.com/112617784/191607788-0791e760-12ca-438f-aa24-f2ac520ec2be.png)
 ![2022-09-22 (1)](https://user-images.githubusercontent.com/112617784/191621288-99b40073-636b-4b0d-8b0c-d97be3ddd018.png)
+![2022-09-22 (3)](https://user-images.githubusercontent.com/112617784/191624218-7cad8741-a812-4306-a8af-5cd1bced939a.png)
