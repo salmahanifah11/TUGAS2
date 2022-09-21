@@ -1,0 +1,112 @@
+[
+    {
+        "model":"mywatchlist.watchlistitem",
+        "pk": 1,
+        "fields":{
+            "item_watched":"Sudah ditonton",
+            "item_title":"Spirited Away",
+            "rating": 4,
+            "release_date":"20 Juli 2001",
+            "item_review":"Fantasi dengan gambar dan plot yang menghangatkan."
+        }
+    },
+    {
+        "model":"mywatchlist.watchlistitem",
+        "pk": 2,
+        "fields":{
+            "item_watched":"Sudah ditonton",
+            "item_title":"Spiderman: No Way Home",
+            "rating": 5,
+            "release_date":"15 Desember 2021",
+            "item_review":"Seru dengan alur yang plot twist."
+        }
+    },
+    {
+        "model":"mywatchlist.watchlistitem",
+        "pk": 3,
+        "fields":{
+            "item_watched":"Sudah ditonton",
+            "item_title":"Mencuri Raden Saleh",
+            "rating": 5,
+            "release_date":"21 Agustus 2022",
+            "item_review":"Cerita yang dibalut dengan cinematography apik."
+        }
+    },
+    {
+        "model":"mywatchlist.watchlistitem",
+        "pk": 4,
+        "fields":{
+            "item_watched":"Belum ditonton",
+            "item_title":"Miracle in Cell No. 7",
+            "rating":1,
+            "release_date":"8 September 2022",
+            "item_review":"Tidak ada review."
+        }
+    },
+    {
+        "model":"mywatchlist.watchlistitem",
+        "pk": 5,
+        "fields":{
+            "item_watched":"Sudah ditonton",
+            "item_title":"Boboiboy: The Movie",
+            "rating":4,
+            "release_date":"13 April 2016",
+            "item_review":"Menegangkan dengan animasi yang unik."
+        }
+    },
+    {
+        "model":"mywatchlist.watchlistitem",
+        "pk": 6,
+        "fields":{
+            "item_watched":"Belum ditonton",
+            "item_title":"The Incredible Hulk",
+            "rating":1,
+            "release_date":"18 Juni 2008",
+            "item_review":"Tidak ada review."
+        }
+    },
+    {
+        "model":"mywatchlist.watchlistitem",
+        "pk": 7,
+        "fields":{
+            "item_watched":"Belum ditonton",
+            "item_title":"Avatar",
+            "rating":1,
+            "release_date":"17 desember 2009",
+            "item_review":"Tidak ada review."
+        }
+    },
+    {
+        "model":"mywatchlist.watchlistitem",
+        "pk": 8,
+        "fields":{
+            "item_watched":"Sudah ditonton",
+            "item_title":"A Whisker Away",
+            "rating":4,
+            "release_date":"18 Juni 2020",
+            "item_review":"Alur cerita yang menggemaskan dan hangat."
+        }
+    },
+    {
+        "model":"mywatchlist.watchlistitem",
+        "pk": 9,
+        "fields":{
+            "item_watched":"Sudah ditonton",
+            "item_title":"Demon Slayer: Mugen Train",
+            "rating":5,
+            "release_date":"6 Januari 2021",
+            "item_review":"Animasi apik dengan alur yang menegangkan."
+        }
+    },
+    {
+        "model":"mywatchlist.watchlistitem",
+        "pk":10,
+        "fields":{
+            "item_watched":"Sudah ditonton",
+            "item_title":"Despicable Me",
+            "rating":4,
+            "release_date":"9 Juli 2010",
+            "item_review":"Cerita lucu dan membuat hati senang"
+        }
+    }
+]
