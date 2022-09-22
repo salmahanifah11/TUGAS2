@@ -8,7 +8,7 @@ XML (eXtensible Markup Language) didesain menjadi self-descriptive sehingga info
 HTML (HyperText Markup Language) merupakan sebuah markup language yang didesain untuk membuat dan atau menampilkan web pages. HTML menampilkan data dan mendeskripsikan struktur dari sebuah webpage namun, HTML merupakan sebuah bahasa yang telah ditentukan dengan implikasinya sendiri.
 
 #### Jelaskan mengapa kita memerlukan data delivery dalam pengimplementasian sebuah platform?
-Data delivery merupakan sebuah proses mentransfer data dari suatu platform menuju ke suatu profil atau platform lainnya. Dalam Django, dimungkinkan bagi kita untuk mengirimkan data dari suatu stack ke stack lainnya, data-data tersebut dapat berbentuk dalam berbagai format, seperti JSON, XML, HTML, dan lainnya sehingga data delivery sangat diperlukan dalam mengimplementasikan sebuah platform.
+Data delivery merupakan sebuah proses mentransfer data dari suatu platform menuju ke suatu profil atau platform lainnya. Dalam Django, dimungkinkan bagi kita untuk mengirimkan data dari suatu stack ke stack lainnya, data-data tersebut dapat berbentuk dalam berbagai format, seperti JSON, XML, HTML, dan lainnya sehingga data delivery sangat diperlukan dalam mengimplementasikan sebuah platform dalam mengembalikan atau menampilkan web page sesuai permintaan format user(browser request data).
 
 #### Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas.
 Diawali dengan mengaktifkan environment pada command prompt direktori yang dituju lalu menjalankan perintah startapp untuk membuat aplikasi baru bernama mywatchlist dan memasukkannya pada “INSTALLED APPS” yang ada pada settings.py django-app.
