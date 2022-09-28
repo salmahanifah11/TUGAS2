@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>Tugas 4 Assignment PBP</h1>
+
+<table>
+    <tr>
+    <th>Username</th>
+    <th>Date</th>
+    <th>Title</th>
+    <th>Description</th>
+    </tr>
+    {% comment %} Tambahkan data di bawah baris ini {% endcomment %}
+    {% for tasks in list_task %}
+        <tr>
+            <th>{{tasks.usernames}}</th>
+            <th>{{tasks.date}}</th>
+            <th>{{tasks.title}}</th>
+            <th>{{tasks.description}}</th>
+        </tr>
+    {% endfor %}
+</table>
+
+<h5>Sesi terakhir login: {{ last_login }}</h5>
+<button><a href="{% url 'todolist:task_user' %}">Tambah Task Baru</a></button>
+<button><a href="{% url 'todolist:logout' %}">Logout</a></button>
+
+{% endblock content %}
