@@ -61,8 +61,11 @@ def task_user(request):
     if request.method == "POST":
         form = TaskForm(request.POST or None, request.FILES or None)
         if form.is_valid():
-            task = form.save(commit=False)
+            task = Task()
             task.user = request.user
+            task.date = datetime.datetime.now()
+            task.title = form.cleaned_data['title']
+            task.description = form.cleaned_data['description']
             task.save()
             messages.success(request, 'Task telah berhasil dibuat!')
             return HttpResponseRedirect(reverse('todolist:show_todolist'))
