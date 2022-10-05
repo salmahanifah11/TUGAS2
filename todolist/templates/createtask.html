@@ -1,15 +1,27 @@
 {% extends 'base.html' %}
 {% block content %}
 
-<h3>Tambah Task</h3>
+<style>
+  body {
+      background-color: rgb(252, 247, 201);
+  }
+</style>
+
+<nav class="navbar" style="background-color: rgb(197, 252, 197); font-style: bold">
+    <div class="container-fluid">
+      <span class="navbar-brand mb-0 h1">Create New task</span>
+    </div>
+  </nav>
 
 <hr>
-<form action="" method="post">
-    {% csrf_token %}
-    <table>
-        {{ form.as_table }}
-    </table>
-    <input type="submit" value="Submit">
-</form>
+<div class = "login container d-flex flex-column justify-content-center align-items-center">
+  <form action="" method="post">
+      {% csrf_token %}
+      <table>
+          {{ form.as_table }}
+      </table>
+      <input class="btn btn-sm btn-outline-secondary" type="submit" value="Submit">
+  </form>
+</div>
 
 {% endblock content %}

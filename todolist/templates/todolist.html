@@ -2,28 +2,74 @@
 
 {% block content %}
 
-<h1>Tugas 4 Assignment PBP</h1>
+<style>
+    body {
+        background-color: rgb(252, 247, 201);
+    }
+</style>
 
-<table>
+<nav class="navbar" style="background-color: rgb(197, 252, 197);">
+    <div class="container-fluid">
+      <span class="navbar-brand mb-0 h1">To Do List</span>
+    </div>
+  </nav>
+
+<body>
+    <h1 style="text-align: center ">{{user.username}}'s To Do List &#10024</h1>
+
+<table class = "table table-bordered w-auto" style="margin-left:auto; margin-right:auto; margin-top:25px;">
+    <thread style="background-color: rgb(112, 114, 114);"></thread>
     <tr>
-    <th>Username</th>
-    <th>Date</th>
-    <th>Title</th>
-    <th>Description</th>
+        <th style="background-color:rgb(197, 194, 194)">Date</th>
+        <th style="background-color:rgb(197, 194, 194)">Title</th>
+        <th style="background-color:rgb(197, 194, 194)">Description</th>
+        <th style="background-color:rgb(197, 194, 194)"> </th>
     </tr>
     {% comment %} Tambahkan data di bawah baris ini {% endcomment %}
     {% for tasks in list_task %}
         <tr>
-            <th>{{tasks.usernames}}</th>
-            <th>{{tasks.date}}</th>
-            <th>{{tasks.title}}</th>
-            <th>{{tasks.description}}</th>
+            <th scope="row">{{tasks.date}}</th>
+            <th scope="row">{{tasks.title}}</th>
+            <th scope="row">{{tasks.description}}</th>
+            <th><a href="task_delete/{{ tasks.id }}" class="btn btn-outline-secondary btn-sm">Delete</a></th>
         </tr>
+
     {% endfor %}
 </table>
 
-<h5>Sesi terakhir login: {{ last_login }}</h5>
-<button><a href="{% url 'todolist:task_user' %}">Tambah Task Baru</a></button>
-<button><a href="{% url 'todolist:logout' %}">Logout</a></button>
+<div class = "login container d-flex flex-column justify-content-center align-items-center">
+    <div style="display: flex; flex-direction: row; flex-wrap: wrap">
+
+        {% for card in list_task %}
+        {#  Single Card Template:#}
+        <div class="card" style="width: 18rem; margin: 10px">
+        <img src="{{ card.image }}" class="card-img-top" >
+        <div class="card-body">
+            <div style="display: flex; flex-direction: row">
+            <h5 class="card-title">{{ card.title }}</h5>
+            {#  Colored cirlce:#}
+            <div style="
+                background: rgb(197, 252, 197);
+                width: 20px;
+                height: 20px;
+                margin-left: 10px;
+                border-radius: 50%;
+            "></div>
+            </div>
+            <p class="card-text">{{ card.description }}</p>
+            <small class="text-muted">{{ card.date }}</small>
+            <a class="btn btn-outline-secondary btn-sm" href="task_delete/{{ card.id }}">Delete</a>
+        </div>
+        </div>
+        {% endfor %}
+    
+    </div>
+</div>
+
+<div class = "login container d-flex flex-column justify-content-center align-items-center">
+    <h5>Last login: {{ last_login }}</h5>
+    <a class="btn btn-sm btn-outline-secondary" type="submit" href="{% url 'todolist:task_user' %}">Create New Task</a>
+    <a class="btn btn-sm btn-outline-secondary" type="submit" href="{% url 'todolist:logout' %}">Logout</a>
+</div>
 
 {% endblock content %}

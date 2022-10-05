@@ -6,10 +6,19 @@
 
 {% block content %}
 
-<div class = "login">
+<style>
+    body {
+        background-color: rgb(252, 247, 201);
+    }
+</style>
 
-    <h1>Login</h1>
+<nav class="navbar" style="background-color: rgb(197, 252, 197); font-style: bold">
+    <div class="container-fluid">
+      <span class="navbar-brand mb-0 h1">Login</span>
+    </div>
+  </nav>
 
+  <div class = "login container d-flex flex-column justify-content-center align-items-center">
     <form method="POST" action="">
         {% csrf_token %}
         <table>
@@ -25,7 +34,7 @@
 
             <tr>
                 <td></td>
-                <td><input class="btn login_btn" type="submit" value="Login"></td>
+                <td><input class="btn btn-outline-success" type="submit" value="Login"></td>
             </tr>
         </table>
     </form>
@@ -38,8 +47,8 @@
         </ul>
     {% endif %}     
         
-    Belum mempunyai akun? <a href="{% url 'todolist:register' %}">Buat Akun</a>
-
+    Belum mempunyai akun?
+    <a class="btn btn-sm btn-outline-secondary" type="submit" href="{% url 'todolist:register' %}">Create Acc</a>
 </div>
 
 {% endblock content %}

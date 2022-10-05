@@ -15,9 +15,10 @@ from todolist.forms import TaskForm
 
 @login_required(login_url='/todolist/login/')
 def show_todolist(request):
-    data_task = Task.objects.all()
+    data_task = Task.objects.all().filter(usernames=request.user)
     context = {
         'list_task': data_task,
+        'usernames': request.user.get_username(),
         'last_login': request.COOKIES['last_login'],
     }
     return render(request, "todolist.html", context)
@@ -62,7 +63,7 @@ def task_user(request):
         form = TaskForm(request.POST or None, request.FILES or None)
         if form.is_valid():
             task = Task()
-            task.user = request.user
+            task.usernames = request.user
             task.date = datetime.datetime.now()
             task.title = form.cleaned_data['title']
             task.description = form.cleaned_data['description']
@@ -71,3 +72,8 @@ def task_user(request):
             return HttpResponseRedirect(reverse('todolist:show_todolist'))
 
     return render(request, 'createtask.html', {'form': form})
+
+def task_delete(request, id):
+    data_task = Task.objects.get(id=id)
+    data_task.delete()
+    return HttpResponseRedirect(reverse('todolist:show_todolist'))
