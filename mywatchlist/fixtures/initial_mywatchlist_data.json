@@ -3,7 +3,7 @@
         "model":"mywatchlist.watchlistitem",
         "pk": 1,
         "fields":{
-            "item_watched":"Sudah ditonton",
+            "item_watched":true,
             "item_title":"Spirited Away",
             "rating": 4,
             "release_date":"20 Juli 2001",
@@ -14,7 +14,7 @@
         "model":"mywatchlist.watchlistitem",
         "pk": 2,
         "fields":{
-            "item_watched":"Sudah ditonton",
+            "item_watched":true,
             "item_title":"Spiderman: No Way Home",
             "rating": 5,
             "release_date":"15 Desember 2021",
@@ -25,7 +25,7 @@
         "model":"mywatchlist.watchlistitem",
         "pk": 3,
         "fields":{
-            "item_watched":"Sudah ditonton",
+            "item_watched":true,
             "item_title":"Mencuri Raden Saleh",
             "rating": 5,
             "release_date":"21 Agustus 2022",
@@ -36,7 +36,7 @@
         "model":"mywatchlist.watchlistitem",
         "pk": 4,
         "fields":{
-            "item_watched":"Belum ditonton",
+            "item_watched":false,
             "item_title":"Miracle in Cell No. 7",
             "rating":1,
             "release_date":"8 September 2022",
@@ -47,7 +47,7 @@
         "model":"mywatchlist.watchlistitem",
         "pk": 5,
         "fields":{
-            "item_watched":"Sudah ditonton",
+            "item_watched":true,
             "item_title":"Boboiboy: The Movie",
             "rating":4,
             "release_date":"13 April 2016",
@@ -58,7 +58,7 @@
         "model":"mywatchlist.watchlistitem",
         "pk": 6,
         "fields":{
-            "item_watched":"Belum ditonton",
+            "item_watched":false,
             "item_title":"The Incredible Hulk",
             "rating":1,
             "release_date":"18 Juni 2008",
@@ -69,7 +69,7 @@
         "model":"mywatchlist.watchlistitem",
         "pk": 7,
         "fields":{
-            "item_watched":"Belum ditonton",
+            "item_watched":false,
             "item_title":"Avatar",
             "rating":1,
             "release_date":"17 desember 2009",
@@ -80,7 +80,7 @@
         "model":"mywatchlist.watchlistitem",
         "pk": 8,
         "fields":{
-            "item_watched":"Sudah ditonton",
+            "item_watched":true,
             "item_title":"A Whisker Away",
             "rating":4,
             "release_date":"18 Juni 2020",
@@ -91,7 +91,7 @@
         "model":"mywatchlist.watchlistitem",
         "pk": 9,
         "fields":{
-            "item_watched":"Sudah ditonton",
+            "item_watched":true,
             "item_title":"Demon Slayer: Mugen Train",
             "rating":5,
             "release_date":"6 Januari 2021",
@@ -102,7 +102,7 @@
         "model":"mywatchlist.watchlistitem",
         "pk":10,
         "fields":{
-            "item_watched":"Sudah ditonton",
+            "item_watched":true,
             "item_title":"Despicable Me",
             "rating":4,
             "release_date":"9 Juli 2010",
